@@ -1,0 +1,1 @@
+The generator couldn't find /mnt/data/OmniseHomepage.jsx. Paste your canvas OmniseHomepage component into src/components/OmniseHomepage.jsx.

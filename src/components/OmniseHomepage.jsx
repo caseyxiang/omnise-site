@@ -202,11 +202,20 @@ export default function OmniseHomepage() {
             </div>
 
             <nav className="hidden items-center gap-6 text-sm text-slate-700 md:flex">
-              <a className="hover:text-slate-900" href="#products">Products</a>
-              <a className="hover:text-slate-900" href="/bloomsense">BloomSense</a>
-              <a className="hover:text-slate-900" href="/poolsense">PoolSense</a>
-              <a className="hover:text-slate-900" href="/foodsense">FoodSense</a>
-              <a className="hover:text-slate-900" href="/milksense">MilkSense</a>
+              <div className="relative group">
+                <button className="hover:text-slate-900 inline-flex items-center gap-1">
+                  Products
+                  <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" /></svg>
+                </button>
+                <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
+                  <div className="rounded-xl border border-slate-200 bg-white shadow-lg py-2 min-w-[160px]">
+                    <a className="block px-4 py-2 hover:bg-slate-50 hover:text-slate-900" href="/bloomsense">BloomSense</a>
+                    <a className="block px-4 py-2 hover:bg-slate-50 hover:text-slate-900" href="/poolsense">PoolSense</a>
+                    <a className="block px-4 py-2 hover:bg-slate-50 hover:text-slate-900" href="/foodsense">FoodSense</a>
+                    <a className="block px-4 py-2 hover:bg-slate-50 hover:text-slate-900" href="/milksense">MilkSense</a>
+                  </div>
+                </div>
+              </div>
               <a className="hover:text-slate-900" href="#privacy">Privacy</a>
               <a className="hover:text-slate-900" href="#legal">Legal</a>
             </nav>

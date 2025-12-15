@@ -18,3 +18,4 @@ BloomSense stores your logs locally on your device by default. No account is req
 ### Optional future sync
 If we introduce optional cloud sync in the future, it will be opt-in and clearly explained at the time.
 
+BloomSense does not collect, transmit, or share personal data off the device in Phase A features.

@@ -18,3 +18,4 @@ BloomSense is provided for personal tracking and educational information. It doe
 ### User responsibility
 You are responsible for decisions you make based on information you record or view in the app.
 
+BloomSense is not a medical device.

@@ -136,7 +136,7 @@ const Pill = ({ icon: Icon, children }) => (
   </span>
 );
 
-const ProductCard = ({ name, tagline, description, icon: Icon, bullets, status }) => (
+const ProductCard = ({ name, tagline, description, icon: Icon, bullets, status, href }) => (
   <Card className="h-full">
     <CardContent>
       <div className="flex items-start justify-between gap-4">
@@ -149,7 +149,9 @@ const ProductCard = ({ name, tagline, description, icon: Icon, bullets, status }
           </div>
           <p className="text-sm text-slate-600">{tagline}</p>
         </div>
-        {status ? <span className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs text-slate-700">{status}</span> : null}
+        {status ? (
+          <span className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs text-slate-700">{status}</span>
+        ) : null}
       </div>
 
       <p className="mt-4 text-sm leading-6 text-slate-700">{description}</p>
@@ -170,8 +172,12 @@ const ProductCard = ({ name, tagline, description, icon: Icon, bullets, status }
       </div>
 
       <div className="mt-6 flex items-center gap-3">
-        <Button className="rounded-2xl">Learn more <ArrowRightIcon className="h-4 w-4" /></Button>
-        <Button variant="outline" className="rounded-2xl">Get updates</Button>
+        <Button className="rounded-2xl" href={href || "#"}>
+          Learn more <ArrowRightIcon className="h-4 w-4" />
+        </Button>
+        <Button variant="outline" className="rounded-2xl" href="/waitlist">
+          Get updates
+        </Button>
       </div>
     </CardContent>
   </Card>
@@ -197,6 +203,10 @@ export default function OmniseHomepage() {
 
             <nav className="hidden items-center gap-6 text-sm text-slate-700 md:flex">
               <a className="hover:text-slate-900" href="#products">Products</a>
+              <a className="hover:text-slate-900" href="/bloomsense">BloomSense</a>
+              <a className="hover:text-slate-900" href="/poolsense">PoolSense</a>
+              <a className="hover:text-slate-900" href="/foodsense">FoodSense</a>
+              <a className="hover:text-slate-900" href="/milksense">MilkSense</a>
               <a className="hover:text-slate-900" href="#privacy">Privacy</a>
               <a className="hover:text-slate-900" href="#legal">Legal</a>
             </nav>
@@ -267,16 +277,16 @@ export default function OmniseHomepage() {
 
             <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               <FadeIn delay={0.02}>
-                <ProductCard name="BloomSense" tagline="Personal wellness tracking." description="Descriptive tracking + education." icon={DropletsIcon} status="In development" bullets={["Local-first", "Descriptive insights", "Privacy-forward"]} />
+                <ProductCard name="BloomSense" tagline="Personal wellness tracking." description="Descriptive tracking + education." icon={DropletsIcon} status="In development" href="/bloomsense" bullets={["Local-first", "Descriptive insights", "Privacy-forward"]} />
               </FadeIn>
               <FadeIn delay={0.05}>
-                <ProductCard name="PoolSense" tagline="Read pool test strips." description="Scan strips, keep history." icon={WavesIcon} status="Prototype" bullets={["Camera-based", "History & trends", "Common strips"]} />
+                <ProductCard name="PoolSense" tagline="Read pool test strips." description="Scan strips, keep history." icon={WavesIcon} status="Prototype" href="/poolsense" bullets={["Camera-based", "History & trends", "Common strips"]} />
               </FadeIn>
               <FadeIn delay={0.08}>
-                <ProductCard name="FoodSense" tagline="Track food signals." description="Log routines and observations." icon={UtensilsIcon} status="Concept" bullets={["Fast logging", "Descriptive patterns", "Privacy-first"]} />
+                <ProductCard name="FoodSense" tagline="Track food signals." description="Log routines and observations." icon={UtensilsIcon} status="Concept" href="/foodsense" bullets={["Fast logging", "Descriptive patterns", "Privacy-first"]} />
               </FadeIn>
               <FadeIn delay={0.11}>
-                <ProductCard name="MilkSense" tagline="Breast milk alcohol—private." description="Level 1/2/3 only. No numeric values." icon={MilkIcon} status="Concept" bullets={["Level-only display", "History & timing", "No feeding decisions"]} />
+                <ProductCard name="MilkSense" tagline="Breast milk alcohol—private." description="Level 1/2/3 only. No numeric values." icon={MilkIcon} status="Concept" href="/milksense" bullets={["Level-only display", "History & timing", "No feeding decisions"]} />
               </FadeIn>
             </div>
           </Container>

@@ -1,17 +1,10 @@
 ---
 title: "FoodSense"
-description: "Track simple food signals and habits over time."
+description: "Track simple food-related signals and routines over time—descriptively."
 ---
 
 # FoodSense
 
-FoodSense is a lightweight way to log food-related signals, context, and routines—so you can see descriptive patterns over time.
+This page exists to prevent build failures caused by invalid markdown frontmatter.
 
-## Legal
-
-- Privacy Policy: /foodsense/privacy
-- Terms & Conditions: /foodsense/terms
-
-## Get updates
-
-- /waitlist
+If you are using the Astro page at `/foodsense` from `src/pages/foodsense/index.astro`, you can safely keep this file unused.

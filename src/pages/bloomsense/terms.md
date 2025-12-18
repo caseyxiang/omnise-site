@@ -4,6 +4,7 @@ title: "BloomSense Terms"
 effectiveDate: "2025-12-14"
 ---
 
+This policy applies to the publicly available version of the BloomSense iOS app.
 
 ## Terms
 

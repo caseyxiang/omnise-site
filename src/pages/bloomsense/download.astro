@@ -7,70 +7,112 @@ import "../../styles/global.css";
   title="Download BloomSense — Omnise"
   description="Download BloomSense for iOS. The pH Tracker for Vaginal Health."
 >
-  <main class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900 px-6 py-20 text-center">
+  <!-- Full screen container with vibrant gradient background (Pink to Purple) -->
+  <main class="min-h-screen relative overflow-hidden bg-gradient-to-br from-pink-500 via-purple-600 to-indigo-700 text-white selection:bg-pink-300 selection:text-pink-900">
 
-    <!-- App Icon / Logo (Optional Placeholder) -->
-    <div class="mb-8 p-4 bg-white rounded-3xl shadow-lg border border-slate-100">
-         <svg class="w-16 h-16 text-pink-500" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-         </svg>
-         <!-- Replace above SVG with an <img> tag if you have the logo asset -->
-         <!-- <img src="/assets/bloomsense-icon.png" alt="BloomSense Logo" class="w-20 h-20" /> -->
-    </div>
+    <!-- Background Pattern/Overlay (Optional texture) -->
+    <div class="absolute inset-0 opacity-10 bg-[url('/grid.svg')] pointer-events-none"></div>
 
-    <h1 class="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
-      Get BloomSense
-    </h1>
+    <div class="relative mx-auto w-full max-w-7xl px-6 lg:px-8 flex flex-col pt-10 pb-20 lg:pt-0 lg:h-screen lg:justify-center">
 
-    <p class="text-lg text-slate-600 max-w-md mx-auto mb-10 leading-relaxed">
-      Scan, log, and track your vaginal pH health with ease. <br class="hidden sm:block" />
-      Descriptive insights, private and secure.
-    </p>
-
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-
-      <!-- Apple App Store Button -->
-      <a
-        href="https://apps.apple.com/us/app/bloomsense-ph-tracker/id6739832267"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-block transition-transform active:scale-95 hover:-translate-y-0.5"
-        aria-label="Download on the App Store"
-      >
-        <svg class="h-14 w-auto" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="120" height="40" rx="5" fill="black"/>
-            <path d="M26.438 29.28C27.509 29.28 28.665 28.533 29.5 27.509C30.222 26.549 30.771 25.263 30.771 23.957C30.771 23.834 30.758 23.715 30.744 23.606C29.61 23.654 28.32 24.372 27.525 25.291C26.837 26.064 26.241 27.272 26.241 28.503C26.241 28.618 26.254 28.73 26.273 28.835C26.326 28.828 26.383 28.824 26.438 28.824V29.28ZM29.412 21.055C27.915 21.055 26.824 21.996 26.115 21.996C25.4 21.996 24.385 21.146 23.235 21.146C21.782 21.146 20.375 22.043 19.645 23.325C18.155 25.903 19.29 29.761 20.735 31.849C21.445 32.868 22.28 34.026 23.415 33.984C24.515 33.945 24.955 33.273 26.285 33.273C27.605 33.273 28.005 33.984 29.175 33.945C30.345 33.903 31.085 32.896 31.78 31.874C32.585 30.704 32.92 29.565 32.94 29.509C32.91 29.497 30.775 28.675 30.775 26.275C30.775 24.265 32.395 23.165 32.475 23.111C31.545 21.751 30.13 21.134 29.412 21.055Z" fill="white"/>
-            <path d="M37.5 15.68V26.24H39.12V15.68H37.5ZM43.95 26.36C45.27 26.36 46.21 25.5 46.21 24.16V20.36H41.35V24.16C41.35 25.5 42.29 26.36 43.61 26.36C44.09 26.36 44.47 26.26 44.75 26.08V24.84C44.53 24.96 44.25 25.02 43.91 25.02C43.33 25.02 42.97 24.7 42.97 24.08V21.48H44.59V20.36H42.97V18.66H41.35V20.36H40.29V21.48H41.35V24.28C41.35 25.68 42.33 26.36 43.95 26.36ZM47.8 26.24H49.42V15.68H47.8V26.24ZM50.8 26.36C51.68 26.36 52.36 26.06 52.74 25.44V26.24H54.18V20.24H52.56V21.04C52.18 20.42 51.5 20.12 50.62 20.12C49.2 20.12 48.02 21.32 48.02 23.24C48.02 25.16 49.2 26.36 50.62 26.36H50.8ZM51.18 25.04C50.18 25.04 49.62 24.22 49.62 23.24C49.62 22.26 50.18 21.44 51.18 21.44C52.18 21.44 52.74 22.26 52.74 23.24C52.74 24.22 52.18 25.04 51.18 25.04ZM57.2 26.36C58.08 26.36 58.76 26.06 59.14 25.44V26.24H60.58V15.68H58.96V21.04C58.58 20.42 57.9 20.12 57.02 20.12C55.6 20.12 54.42 21.32 54.42 23.24C54.42 25.16 55.6 26.36 57.02 26.36H57.2ZM57.58 25.04C56.58 25.04 56.02 24.22 56.02 23.24C56.02 22.26 56.58 21.44 57.58 21.44C58.58 21.44 59.14 22.26 59.14 23.24C59.14 24.22 58.58 25.04 57.58 25.04ZM64.8 26.36C65.86 26.36 66.72 25.92 67.24 25.06L66.08 24.32C65.82 24.76 65.38 25.02 64.84 25.02C63.92 25.02 63.36 24.44 63.26 23.64H67.4V23.2C67.4 21.28 66.26 20.12 64.66 20.12C63.14 20.12 61.94 21.3 61.94 23.24C61.94 25.26 63.2 26.36 64.8 26.36ZM64.66 21.28C65.5 21.28 65.92 21.9 65.9 22.6H63.36C63.48 21.8 63.98 21.28 64.66 21.28ZM70.4 26.36C71.72 26.36 72.66 25.5 72.66 24.16V20.36H71.04V24.16C71.04 25.5 70.1 26.36 68.78 26.36C68.3 26.36 67.92 26.26 67.64 26.08V24.84C67.86 24.96 68.14 25.02 68.48 25.02C69.06 25.02 69.42 24.7 69.42 24.08V21.48H67.8V20.36H69.42V18.66H71.04V20.36H72.1V21.48H71.04V24.28C71.04 25.68 70.06 26.36 68.44 26.36H70.4ZM79.6 26.36C80.84 26.36 81.6 25.56 81.6 24.28V20.36H80V24.24C80 24.84 79.52 25.12 78.84 25.12C78.16 25.12 77.68 24.84 77.68 24.24V20.36H76.08V24.28C76.08 25.56 76.84 26.36 78.08 26.36C78.58 26.36 79.02 26.22 79.32 25.96L79.36 26.24H80.8V26.36H79.6ZM87 26.36C87.88 26.36 88.56 26.06 88.94 25.44V26.24H90.38V20.24H88.76V21.04C88.38 20.42 87.7 20.12 86.82 20.12C85.4 20.12 84.22 21.32 84.22 23.24C84.22 25.16 85.4 26.36 86.82 26.36H87ZM87.38 25.04C86.38 25.04 85.82 24.22 85.82 23.24C85.82 22.26 86.38 21.44 87.38 21.44C88.38 21.44 88.94 22.26 88.94 23.24C88.94 24.22 88.38 25.04 87.38 25.04ZM94.2 26.36C95.52 26.36 96.46 25.5 96.46 24.16V20.36H94.84V24.16C94.84 25.5 93.9 26.36 92.58 26.36C92.1 26.36 91.72 26.26 91.44 26.08V24.84C91.66 24.96 91.94 25.02 92.28 25.02C92.86 25.02 93.22 24.7 93.22 24.08V21.48H91.6V20.36H93.22V18.66H94.84V20.36H95.9V21.48H94.84V24.28C94.84 25.68 93.86 26.36 92.24 26.36H94.2ZM103.4 26.36C104.64 26.36 105.4 25.56 105.4 24.28V20.36H103.8V24.24C103.8 24.84 103.32 25.12 102.64 25.12C101.96 25.12 101.48 24.84 101.48 24.24V20.36H99.88V24.28C99.88 25.56 100.64 26.36 101.88 26.36C102.38 26.36 102.82 26.22 103.12 25.96L103.16 26.24H104.6V26.36H103.4ZM109.8 26.36C110.68 26.36 111.36 26.06 111.74 25.44V26.24H113.18V20.24H111.56V21.04C111.18 20.42 110.5 20.12 109.62 20.12C108.2 20.12 107.02 21.32 107.02 23.24C107.02 25.16 108.2 26.36 109.62 26.36H109.8ZM110.18 25.04C109.18 25.04 108.62 24.22 108.62 23.24C108.62 22.26 109.18 21.44 110.18 21.44C111.18 21.44 111.74 22.26 111.74 23.24C111.74 24.22 111.18 25.04 110.18 25.04Z" fill="white"/>
-        </svg>
-      </a>
-
-      <!-- Google Play Placeholder (Disabled) -->
-      <div class="relative group opacity-60 cursor-not-allowed" aria-label="Google Play Coming Soon">
-        <svg class="h-14 w-auto grayscale" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="135" height="40" rx="5" fill="#A6A6A6"/>
-          <!-- Simplified Play Store Shape (Text Only Replica for placeholder) -->
-          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="12" font-family="sans-serif">Get it on Google Play</text>
-        </svg>
-        <div class="absolute -top-3 -right-3 rotate-12 bg-yellow-400 text-slate-900 text-xs font-bold px-2 py-1 rounded shadow-sm">
-          Coming Soon
+      <!-- Top Brand -->
+      <div class="w-full flex justify-start lg:absolute lg:top-10 lg:left-8 mb-12 lg:mb-0 z-10">
+        <div class="flex items-center gap-2">
+           <!-- Simple Brand Logo Concept -->
+           <div class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+           </div>
+           <span class="text-lg font-bold tracking-wide uppercase text-white/90">BloomSense</span>
         </div>
       </div>
 
-    </div>
+      <!-- Main Content Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
 
-    <!-- Screenshots or Feature Highlights (Optional) -->
-    <!-- <div class="mt-16 w-full max-w-sm mx-auto bg-slate-100 rounded-3xl h-64 border border-slate-200"></div> -->
+        <!-- Left: Text Content -->
+        <div class="text-center lg:text-left z-10 flex flex-col items-center lg:items-start order-2 lg:order-1">
+          <h1 class="text-5xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight drop-shadow-sm">
+            The most effective <br class="hidden lg:block"/>tracker for <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-200 to-white">Your Health</span>
+          </h1>
 
-    <div class="mt-20 pt-10 border-t border-slate-200 w-full max-w-lg">
-      <div class="text-sm text-slate-500 space-x-4">
-        <a href="/bloomsense/privacy" class="hover:text-slate-900 hover:underline">Privacy Policy</a>
-        <span>&middot;</span>
-        <a href="/bloomsense/terms" class="hover:text-slate-900 hover:underline">Terms of Service</a>
+          <p class="text-lg lg:text-xl text-white/80 max-w-lg mb-10 font-light leading-relaxed">
+            Scan, log, and track your vaginal pH with ease. <br/>
+            Descriptive insights, designed for privacy.
+          </p>
+
+          <!-- Download Buttons -->
+          <div class="flex flex-col sm:flex-row items-center gap-4 w-full justify-center lg:justify-start">
+             <!-- Apple App Store -->
+             <a
+                href="https://apps.apple.com/us/app/bloomsense-ph-tracker/id6739832267"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex items-center bg-black text-white px-5 py-2.5 rounded-xl border border-white/20 shadow-xl hover:scale-105 transition-all duration-300"
+              >
+               <svg class="w-8 h-8 mr-3 fill-current" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.96 1.07-3.09-1.05.08-2.32.74-3.07 1.63-.66.79-1.2 1.98-1.02 3.08 1.17.09 2.37-.64 3.02-1.62z"/></svg>
+               <div class="text-left">
+                  <div class="text-[0.6rem] uppercase tracking-wider opacity-70">Download on the</div>
+                  <div class="text-lg font-bold leading-none">App Store</div>
+               </div>
+             </a>
+
+             <!-- Google Play -->
+             <div class="group relative flex items-center bg-black/40 text-white/50 px-5 py-2.5 rounded-xl border border-dashed border-white/10 cursor-not-allowed">
+                <svg class="w-8 h-8 mr-3 fill-current opacity-50" viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91,3.34,2.39,3.84,2.15L13.69,12L3.84,21.85C3.34,21.6,3,21.09,3,20.5M16.81,15.12L6.05,25.88L20.06,11.87L16.81,15.12M20.37,11.56L16.81,8.88L21.35,4.34C21.62,4.61,21.85,4.96,21.96,5.37C22.07,5.78,22.05,6.23,21.88,6.63L20.37,11.56M15,7.5L5.15,17.35L14.59,7.91L15,7.5Z"/></svg>
+                <div class="text-left">
+                   <div class="text-[0.6rem] uppercase tracking-wider">Android App on</div>
+                   <div class="text-lg font-bold leading-none">Google Play</div>
+                </div>
+                <div class="absolute -top-3 -right-2 bg-yellow-400 text-black text-[0.6rem] font-bold px-1.5 py-0.5 rounded rotate-12 shadow-sm">SOON</div>
+             </div>
+          </div>
+
+          <div class="mt-8 text-xs text-white/40 font-light flex gap-4">
+             <a href="/bloomsense/privacy" class="hover:text-white transition-colors">Privacy</a>
+             <a href="/bloomsense/terms" class="hover:text-white transition-colors">Terms</a>
+          </div>
+        </div>
+
+        <!-- Right: iPhone Mockup (CSS Only) -->
+        <div class="flex justify-center items-center relative order-1 lg:order-2">
+            <!-- Glow effect behind phone -->
+            <div class="absolute w-80 h-80 bg-white/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
+
+            <!-- CSS iPhone Frame -->
+            <div class="relative w-[300px] h-[600px] bg-gray-900 rounded-[50px] shadow-2xl border-8 border-gray-800 ring-1 ring-white/20 overflow-hidden transform lg:rotate-[-5deg] lg:hover:rotate-0 transition-all duration-700 ease-out">
+                <!-- Notch -->
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 h-[30px] w-[150px] bg-gray-900 rounded-b-3xl z-20"></div>
+
+                <!-- Screen Content -->
+                <div class="w-full h-full bg-white flex flex-col items-center justify-center relative overflow-hidden">
+                    <!-- Status Bar Shim -->
+                    <div class="w-full h-12 bg-gray-100/50 backdrop-blur-md absolute top-0 z-10 w-full"></div>
+
+                    <!-- Placeholder UI or Image -->
+                    <div class="flex flex-col items-center gap-4 p-8 text-center mt-10">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-pink-400 to-purple-500 shadow-xl flex items-center justify-center text-white mb-4">
+                            <span class="text-4xl">🌸</span>
+                        </div>
+                        <h2 class="text-slate-800 text-2xl font-bold">BloomSense</h2>
+                        <div class="w-full h-32 bg-slate-50 rounded-xl border border-slate-100 p-3 shadow-sm flex flex-col gap-2">
+                             <div class="w-full h-8 bg-slate-200/50 rounded animate-pulse"></div>
+                             <div class="w-2/3 h-8 bg-slate-200/50 rounded animate-pulse"></div>
+                             <div class="w-full h-8 bg-slate-200/30 rounded animate-pulse"></div>
+                        </div>
+                        <p class="text-sm text-slate-400 mt-2">Your Screen Here</p>
+                    </div>
+
+                    <!-- Bottom Nav Shim -->
+                    <div class="absolute bottom-0 w-full h-20 bg-gray-50 border-t border-gray-100 flex justify-around items-center px-6">
+                        <div class="w-8 h-8 rounded-full bg-slate-200"></div>
+                        <div class="w-12 h-12 -mt-6 rounded-full bg-pink-500 shadow-lg border-4 border-white"></div>
+                        <div class="w-8 h-8 rounded-full bg-slate-200"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
       </div>
-      <p class="mt-4 text-xs text-slate-400">
-        &copy; {new Date().getFullYear()} Omnise. All rights reserved.
-      </p>
     </div>
-
   </main>
 </SiteLayout>

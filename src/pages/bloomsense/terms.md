@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/LegalLayout.astro
 title: "BloomSense Terms"
-effectiveDate: "2025-12-14"
+effectiveDate: "2026-01-10"
 ---
 
 This policy applies to the publicly available version of the BloomSense iOS app.
@@ -20,3 +20,10 @@ BloomSense is provided for personal tracking and educational information. It doe
 You are responsible for decisions you make based on information you record or view in the app.
 
 BloomSense is not a medical device.
+
+### In-App Shop
+
+BloomSense includes a Shop feature that allows you to browse and purchase Natureland products.
+- **Transactions**: All transactions are processed securely through Shopify.
+- **Terms of Sale**: Purchases are subject to Natureland's standard terms of sale, including shipping and return policies.
+- **Customer Service**: For order-related inquiries, please contact Natureland support directly.

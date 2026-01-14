@@ -4,7 +4,7 @@ title: "BloomSense Privacy Policy"
 effectiveDate: "2026-01-10"
 ---
 
-This policy applies to the publicly available version of the BloomSense iOS app.
+This policy applies to the publicly available version of the BloomSense mobile application (iOS and Android).
 
 ## Privacy Policy
 

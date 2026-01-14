@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/LegalLayout.astro
 title: "BloomSense Privacy Policy"
-effectiveDate: "2026-01-10"
+effectiveDate: "2026-01-14"
 ---
 
 This policy applies to the publicly available version of the BloomSense mobile application (iOS and Android).
@@ -24,7 +24,7 @@ If we introduce optional cloud sync in the future, it will be opt-in and clearly
 
 ### Camera Usage
 
-BloomSense uses your device's camera to scan and analyze Natureland pH test strips. Image processing is performed locally on your device. Images are not transmitted to or stored on our servers.
+BloomSense uses your device's camera to scan and analyze NATURELAND pH test strips. Image processing is performed locally on your device. Images are not transmitted to or stored on our servers.
 
 ### Third-Party Services & Shop
 

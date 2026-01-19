@@ -22,10 +22,6 @@ BloomSense stores your logs locally on your device by default. No account is req
 
 If we introduce optional cloud sync in the future, it will be opt-in and clearly explained at the time.
 
-### Camera Usage
-
-BloomSense uses your device's camera to scan and analyze NATURELAND pH test strips. Image processing is performed locally on your device. Images are not transmitted to or stored on our servers.
-
 ### Third-Party Services & Shop
 
 BloomSense includes an in-app Shop powered by the **Shopify Storefront API**.

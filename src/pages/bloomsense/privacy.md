@@ -12,7 +12,7 @@ This page applies to **BloomSense**, an Omnise app.
 
 ### What BloomSense records
 
-BloomSense lets users record pH readings, symptoms, and timing/context for personal tracking.
+BloomSense lets users record pH readings, symptoms, and context (including menstrual period flow and intimacy/sexual activity data) for personal tracking.
 
 ### Local-first by default
 

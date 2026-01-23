@@ -5,7 +5,7 @@ import "../../styles/global.css";
 
 <SiteLayout
   title="Download BloomSense — Omnise"
-  description="Download BloomSense for iOS. The pH Tracker for Vaginal Health."
+  description="Download BloomSense for iOS and Android. The pH Tracker for Vaginal Health."
 >
   <!-- Full screen container with vibrant gradient background (Pink to Purple) -->
   <main class="min-h-screen relative overflow-hidden bg-gradient-to-br from-pink-500 via-purple-600 to-indigo-700 text-white selection:bg-pink-300 selection:text-pink-900">
@@ -36,7 +36,7 @@ import "../../styles/global.css";
           </h1>
 
           <p class="text-lg lg:text-xl text-white/80 max-w-lg mb-10 font-light leading-relaxed">
-            Scan, log, and track your vaginal pH with ease. <br/>
+            Log and track your vaginal pH with ease. <br/>
             Descriptive insights, designed for privacy.
           </p>
 
@@ -54,15 +54,17 @@ import "../../styles/global.css";
                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1602115200" alt="Download on the App Store" class="h-14 w-auto" />
              </a>
 
-             <!-- Google Play (Native Badge with Coming Soon overlay) -->
-             <div class="relative group opacity-60 cursor-not-allowed" aria-label="Get it on Google Play (Coming Soon)">
+             <!-- Google Play (Native Badge) -->
+             <a
+                href="https://play.google.com/store/apps/details?id=com.sixpines.bloomsense"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:opacity-80 transition-opacity"
+                aria-label="Get it on Google Play"
+              >
                 <!-- Official Google Play Badge URL (Generic) -->
-                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="h-[3.75rem] w-auto -ml-1" />
-
-                <div class="absolute -top-3 -right-3 bg-yellow-400 text-slate-900 text-[0.6rem] font-bold px-1.5 py-0.5 rounded rotate-12 shadow-sm border border-white/20">
-                  SOON
-                </div>
-             </div>
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="h-[5rem] w-auto -ml-3" />
+             </a>
           </div>
 
           <div class="mt-8 text-xs text-white/40 font-light flex gap-4">

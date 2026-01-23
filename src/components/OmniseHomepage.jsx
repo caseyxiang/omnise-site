@@ -286,7 +286,7 @@ export default function OmniseHomepage() {
 
             <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               <FadeIn delay={0.02}>
-                <ProductCard name="BloomSense" tagline="Personal wellness tracking." description="Descriptive tracking + education." icon={DropletsIcon} status="Available on iOS" href="/bloomsense" bullets={["Local-first", "Descriptive insights", "Privacy-forward"]} />
+                <ProductCard name="BloomSense" tagline="Personal wellness tracking." description="Descriptive tracking + education." icon={DropletsIcon} status="Available on iOS & Android" href="/bloomsense" bullets={["Local-first", "Descriptive insights", "Privacy-forward"]} />
               </FadeIn>
               <FadeIn delay={0.05}>
                 <ProductCard name="PoolSense" tagline="Read pool test strips." description="Scan strips, keep history." icon={WavesIcon} status="Prototype" href="/poolsense" bullets={["Camera-based", "History & trends", "Common strips"]} />

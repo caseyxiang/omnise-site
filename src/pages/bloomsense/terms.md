@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/LegalLayout.astro
 title: "BloomSense Terms of Service"
-effectiveDate: "2026-02-09"
+effectiveDate: "2026-02-12"
 ---
 
 This policy applies to the publicly available version of the BloomSense mobile application (iOS and Android), published by Omnise.
@@ -24,7 +24,7 @@ BloomSense is **not a medical device** and does not provide medical diagnosis, t
 
 ### 3. Eligibility
 
-You must be at least **13 years old** to use BloomSense. By using the app, you confirm that you meet this age requirement. If you are under 18, you should review these terms with a parent or guardian.
+You must be at least **18 years old** to use BloomSense. All users are required to verify their age by providing their date of birth upon first use. If your date of birth indicates you are under 18, access to the app will be blocked entirely.
 
 ### 4. Accounts
 

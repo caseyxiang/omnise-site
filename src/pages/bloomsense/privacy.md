@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/LegalLayout.astro
 title: "BloomSense Privacy Policy"
-effectiveDate: "2026-02-09"
+effectiveDate: "2026-02-12"
 ---
 
 This policy applies to the publicly available version of the BloomSense mobile application (iOS and Android), published by Omnise.
@@ -50,6 +50,7 @@ BloomSense uses the following third-party services to operate:
 | **Apple Sign-In** | Authentication | Email, name (optional) |
 | **Google Sign-In** | Authentication | Email, name |
 | **Apple Push Notification service (APNs)** | Push notifications (iOS) | Device token, notification content |
+| **Firebase Cloud Messaging (FCM)** | Push notifications (Android) | Device token, notification content |
 | **Shopify Storefront API** | In-app Shop | Product browsing data, checkout information |
 
 Your health data is **never** shared with Shopify or linked to your shopping activity.
@@ -71,9 +72,11 @@ Your health data is **never** shared with Shopify or linked to your shopping act
 
 **Content Controls**: You can block other users and manage your privacy settings from Settings.
 
-### 7. Children's Privacy
+### 7. Age Verification & Children's Privacy
 
-BloomSense is not intended for users under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us so we can delete it.
+BloomSense requires all users to verify their age upon first use by providing their date of birth. Users under the age of **18** are not permitted to use any features of the app, including health tracking, community, and the shop. If a user's date of birth indicates they are under 18, access to the app is blocked entirely.
+
+We do not knowingly collect personal information from children under 13 or minors under 18. No data is collected or stored before age verification is completed. If you believe a minor under 18 has gained access to BloomSense, please contact us so we can investigate and delete any associated data.
 
 ### 8. Do Not Sell My Personal Information
 

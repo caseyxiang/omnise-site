@@ -61,6 +61,8 @@ Omnise employs content moderation measures including automated systems and user 
 - **Report** objectionable content or users
 - **Block** other users to prevent interactions
 
+We commit to **reviewing reported content within 24 hours** and will remove content and eject users who violate these Terms or community guidelines. Omnise maintains a zero-tolerance policy for objectionable content and abusive behavior.
+
 Omnise is not responsible for user-generated content and does not endorse the views expressed by community members.
 
 ### 8. In-App Shop
